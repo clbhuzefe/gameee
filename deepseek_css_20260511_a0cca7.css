@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 { color: #2c3e50; margin-bottom: 1rem; }
+p { line-height: 1.6; color: #555; }
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+label { font-weight: 600; color: #34495e; margin-bottom: -1rem; }
+input, select {
+    padding: 0.8rem;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+button:hover:not(:disabled) { background-color: #2980b9; }
+button:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#timer { font-weight: bold; color: #e67e22; }
+
+#question-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #333;
+    font-size: 1rem;
+}
+.option-btn:hover { background-color: #e9ecef; border-color: #adb5bd; }
+.option-btn.selected { background-color: #3498db; color: white; border-color: #2980b9; }
+
+#result-details {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+#iq-score { font-size: 2.5rem; font-weight: bold; color: #2c3e50; }
+.error { color: #e74c3c; margin-top: 0.5rem; }
